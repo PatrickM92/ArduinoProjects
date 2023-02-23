@@ -73,13 +73,13 @@ void loop() {
   if (currentStep == 2 && ((millis() - delayStart) >= 8000)) {
     //delayRunning = false; // // prevent this code being run more then once
     spinMotor(0);
-    myservo.write(120);    
+    myservo.write(120);
     Serial.println("STEP TWO FINISHED");
     currentStep = 3;
   }
 
   //STEP THREE
-  if (currentStep == 3 && ((millis() - delayStart) >= 9000)) {
+  if (currentStep == 3 && ((millis() - delayStart) >= 10000)) {
     spinMotor(-150);
     //delayRunning = false; // // prevent this code being run more then once
     Serial.println("STEP THREE FINISHED");
@@ -87,7 +87,7 @@ void loop() {
   }
 
   //STEP FOUR
-  if (currentStep == 4 && ((millis() - delayStart) >= 13000)) {
+  if (currentStep == 4 && ((millis() - delayStart) >= 15000)) {
     spinMotor(0);
     myservo.write(70);
     //delayRunning = false; // // prevent this code being run more then once
@@ -96,7 +96,7 @@ void loop() {
   }
 
   //STEP FIVE
-  if (currentStep == 5 && ((millis() - delayStart) >= 14000)) {
+  if (currentStep == 5 && ((millis() - delayStart) >= 17000)) {
     spinMotor(150);
     //delayRunning = false; // // prevent this code being run more then once
     Serial.println("STEP FIVE FINISHED");
@@ -104,7 +104,7 @@ void loop() {
   }
 
   //STEP STOP
-  if (currentStep == 6 && ((millis() - delayStart) >= 18000)) {
+  if (currentStep == 6 && ((millis() - delayStart) >= 23000)) {
     spinMotor(0);
     myservo.write(95);
     delayRunning = false; // // prevent this code being run more then once
