@@ -64,7 +64,7 @@ void loop() {
   // check if delay has timed out after 10sec == 10000mS
   if (currentStep == 1 && ((millis() - delayStart) >= 4000)) {
     //delayRunning = false; // // prevent this code being run more then once
-    spinMotor(100);
+    spinMotor(150);
     Serial.println("STEP ONE FINISHED");
     currentStep = 2;
   }
