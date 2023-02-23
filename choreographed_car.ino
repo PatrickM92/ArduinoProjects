@@ -1,6 +1,5 @@
 /*
   SparkFun Inventor’s Kit
-  Circuit 3A-Servo
 
   Move a servo attached to pin 9 so that it's angle matches a potentiometer attached to A0.
 
@@ -134,7 +133,7 @@ void loop() {
 
   // myservo.write(servoPosition);                      //move the servo to the 10 degree position
   // Serial.println("delay");
-  delay(2000);
+  //delay(2000);
 }
 
 /********************************************************************************/
